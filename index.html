@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>タグ、プロパティ一覧表</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="left">
+        <h2>テンプレート</h2>
+        <p>
+         ファイル名：index.html<br>
+        < !DOCTYPE html ><br>
+        < html lang="ja" ><br>
+        < head ><br>
+            < meta charset="UTF-8" ><br>
+            < title >< /title ><br>
+            < link rel="stylesheet" href="style.css" ><br>
+        < /head ><br>
+        < body >< /body ><br>
+        < /html ><br>
+        </p>
+    </div>
+    <div class="right">
+        <h2>テンプレート</h2>
+        <p class="right2">
+        ファイル名：style.css<br>
+            @charset "UTF-8";
+        </p>
+    </div>
+    <div class="space"><br></div>
+    <div class="left">
+        <h2>htmlタグ一覧</h2>
+        <table>
+        <caption><b>＜基本構造＞</b></caption>
+            <tr><th>html</th><td>htmlであることを表す</td></tr>
+            <tr><th>head</th><td>ヘッダー情報を表す</td></tr>
+            <tr><th>body</th><td>コンテンツ部分であることを表す</td> </tr>
+        </table>
+        <table>
+            <caption class="ca1"><b>＜head内でよく使うタグ＞</b></caption>
+            <tr><th>title</th><td>ブラウザのタブに表示される。検索エンジンで検索された際などに表示されるSEO対策として非常に重要なもの</td></tr>
+            <tr><th>meta</th><td>ブラウザ画面には表示されない。文書情報を記述するための要素（文字コード・文書の概要・キーワードなど）<br>
+            例：<　meta charset="UTF-8"　><br>
+            < meta name="keywords" content=”文書の概要をここに記述” ><br>
+            < meta name="description" content=”キーワードA,キーワードB” ></td></tr>
+            <tr><th>link</th><td>外部ファイルとのリンクを表す（CSS など）</td></tr>
+            <tr><th>style</th><td>html内でCSSを記述するときに使用する</td></tr>
+        </table>
+        <table>
+            <caption class="ca1"><b>＜body内でよく使うタグ＞</b></caption>
+                <tr><th>h1~h6</th><td>見出し</td></tr>
+                <tr><th>p</th><td>文書の段落（テキスト）</td></tr>
+                <tr><th>br</th><td>改行</td></tr>
+                <tr><th>div</th><td>特別な意味を持たない汎用的なグループ。セクション要素でマークアップすることが望ましいが、div要素で代用しても問題ない</td></tr>
+                <tr><th>img</th><td>画像の挿入<br>（例：img src="img/imag.jpg" width="480" height="320" alt="〇〇の画像")</td></tr>
+                <tr><th>a</th><td>ハイパーリンク（例：a href=""）電話番号を設定する場合は< a href="tel:123456">123456< /a></td></tr>
+                <tr><th>target="_blank"</th><td>リンク先を別ウィンドウで表示する</td></tr>
+                <tr><th>strong</th><td>文字を強調（太字）する</td></tr>
+                <tr><th>em</th><td>文字を斜体にする</td></tr>
+                <tr><th>span</th><td>テキストの一部を指定する。インライン要素は改行されない要素</td></tr>
+                <tr><th>ul</th><td>順序のないリストを表す</td></tr>
+                <tr><th>ol</th><td>順序のあるリストを表す</td></tr>
+                <tr><th>li</th><td>リストの項目ul,olとセットで使う</td></tr>
+                <tr><th>dl</th><td>定義リストdd,dtとセットで使う</td></tr>
+                <tr><th>dt</th><td>定義リストの定義語の説明部分</td></tr>
+                <tr><th>dd</th><td>定義リストの用語を表す</td></tr>
+                <tr><th>table</th><td>表を作成する</td></tr>
+                <tr><th>tr</th><td>表組みの”行”</td></tr>
+                <tr><th>th</th><td>表組みの”列”の見出し</td></tr>
+                <tr><th>td</th><td>表組みの”列”</td></tr>
+                <tr><th>id</th><td>ページ内にリンクを設定したい場合に使用。数字や記号から始まる名称はNG<br>(例：①id名をつける< section id="cats">< /section><br>②リンクの設定< li>< a href="#cats">< /a>< /li></td></tr>
+        </table>
+        <table>
+            <caption class="ca1"><b>＜セクション構造を表すタグ＞</b></caption>
+                <tr><th>section</th><td>見出しとそれに伴うコンテンツのひと固まり</td></tr>
+                <tr><th>header</th><td>サイト名やロゴなどWEBページの導入部分</td></tr>
+                <tr><th>main</th><td>メインコンテンツ部分</td></tr>
+                <tr><th>nav</th><td>ページ上の主要なナビゲーション</td></tr>
+                <tr><th>footer</th><td>フッター部分</td></tr>
+                <tr><th>article</th><td>独立した自己完結したセクション</td></tr>
+                <tr><th>aside</th><td>サイドバーなどに配置する補足情報部分</td></tr>
+        </table>
+        <table>
+            <caption class="ca1"><b>＜その他＞</b></caption>
+                <tr><th>hr</th><td>水平線</td></tr>
+                <tr><th>address</th><td>作者情報や連絡先を表す</td></tr>
+                <tr><th>small</th><td>免責事項、警告、法的制約、著作権表記など<br>※footer部分に使用する</td></tr>
+        </table>
+        <p><a href="http://www.htmq.com/">クイックリファレンス</a></p>
+    </div>
+    <div class="right">
+    <h2>CSSプロパティ一覧</h2>
+    <table>
+        <caption><b>＜文字色・文字の装飾＞</b></caption>
+        <tr><th>color</th><td>文字色</td></tr>
+        <tr><th>font-family</th><td>フォントの種類</td></tr>
+        <tr><th>font-size</th><td>フォントの大きさ</td></tr>
+        <tr><th>font-weight</th><td>フォントの太さ</td></tr>
+        <tr><th>line-height</th><td>行の高さ</td></tr>
+        <tr><th>text-align</th><td>テキストの水平方向の揃え方</td></tr>
+        <tr><th>vertical-align</th><td>テキストの垂直方向の揃え方</td></tr>
+        <tr><th>text-decoration</th><td>テキストに下線、打ち消し線などの装飾</td></tr>
+        <tr><th>letter-space</th><td>文字の間隔を指定</td></tr>
+        <tr><th>text-shadow</th><td>テキストに影をつける</td></tr>
+    </table>
+    <table>
+        <caption><b>＜背景＞</b></caption>
+        <tr><th>background-attachment</th><td>背景画像の固定や移動</td></tr>
+        <tr><th>background-color</th><td>背景色</td></tr>
+        <tr><th>background-image</th><td>背景画像</td></tr>
+        <tr><th>background-position</th><td>背景画像の表示位置</td></tr>
+        <tr><th>background-repeat</th><td>背景画像の繰り返しパターン</td></tr>
+    </table>
+    <table>
+        <caption><b>＜幅・高さ・余白＞</b></caption>
+        <tr><th>width</th><td>ボックスの幅</td></tr>
+        <tr><th>max-width</th><td>ボックス幅の最大値</td></tr>
+        <tr><th>min-width</th><td>ボックス幅の最小値</td></tr>
+        <tr><th>height</th><td>ボックスの高さ</td></tr>
+        <tr><th>max-height</th><td>ボックス高さの最大値</td></tr>
+        <tr><th>min-height</th><td>ボックス高さの最小値</td></tr>
+        <tr><th>margin</th><td>ボックス外側の余白<br>-top,-bottom,-left,right</td></tr>
+        <tr><th>padding</th><td>ボックス内側の余白<br>-top,-bottom,-left,right</td></tr>
+    </table>
+    <table>
+        <caption><b>＜線の色・線の装飾＞</b></caption>
+        <tr><th>border</th><td>線の色、スタイル、太さをまとめて指定</td></tr>
+        <tr><th>border-color</th><td>線の色</td></tr>
+        <tr><th>border-style</th><td>線のスタイル</td></tr>
+        <tr><th>border-width</th><td>線の幅</td></tr>
+        <tr><th>border-radius</th><td>線の角を丸める</td></tr>
+        <tr><th>border-collapse</th><td>隣り合うセルのボックス線の結合・分離</td></tr>
+        <tr><th>border-spacing</th><td>隣り合うセルのボックス線同士の距離</td></tr>
+    
+    </table>
+    <table>
+        <caption><b>＜レイアウト＞</b></caption>
+        <tr><th>position</th><td>ボックスの位置を指定</td></tr>
+        <tr><th>display</th><td>ボックスの表示形式を指定<br>
+        メニュー項目を横並びにする：.class{list-style-type: none; border: px solid #; display: inline; width: px;(幅を統一)}<br>
+        ボタン風デザインに変更する：.class{display: blocke; padding: px; background:; color:;}</td></tr>
+        <tr><th>float</th><td>ボックスを左右どちらかに寄せて配置</td></tr>
+        <tr><th>clear</th><td>floatを解除する</td></tr>
+    </table>
+    <table>
+        <caption><b>＜表（リスト）＞</b></caption>
+        <tr><th>list-style</th><td>リストマーカーの種類、位置、画像をまとめて指定<br>
+        <a href="test1.html">・none：不要な「・」を消す<br>
+        ・disc：黒丸、circle：白丸、square：黒四角</a></td></tr>
+        <tr><th>list-style-image</th><td>リストマーカーの画像を指定</td></tr>
+        <tr><th>list-style-type</th><td>リストマーカーの文字の種類を指定</td></tr>
+        <tr><th>list-style-position</th><td>リストマーカーの表示位置を指定</td></tr>
+    </table>
+    <table>
+        <caption><b>＜その他＞</b></caption>
+        <tr><th>cursor</th><td>カーソルの形状を指定</td></tr>
+        <tr><th>content</th><td>コンテンツを挿入</td></tr>
+        <tr><th>opacity</th><td>要素の透明度を指定</td></tr>
+        <tr><th>a:link{color:;}<br>
+                a:visited{color:;}<br>
+                a:hover{color:;}<br>
+                a:active{color:;}</th><td>カーソルを重ねたら紫、ボタンを押し続けたら赤などリンクしているテキストにいくつか設定できる</td></tr>
+    </table>
+    </div>
+    <div class="space">&nbsp;<br></div>
+</body>
+</html>
